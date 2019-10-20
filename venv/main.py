@@ -18,7 +18,7 @@ class board:
     boardDisp = pygame.Surface(RES)
     keyState = 0
 
-    def __init__(self, wid = 30, hi = 16, min = 10):
+    def __init__(self, wid = 30, hi = 16, min = 100):
         assert(min < wid * hi), print('more mines than tiles')
         self.tiles = []
         self.mines = min
